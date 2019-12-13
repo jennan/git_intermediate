@@ -14,7 +14,7 @@ git commands (clone, add, commit, pull, push).
 [1]: "collaborative" means with other people and also with future yourself ;-).
 
 
-## Additional handy commands
+## Additional handy commands (~45 min)
 
 - gitignore
 - git reset
@@ -27,7 +27,7 @@ git commands (clone, add, commit, pull, push).
 - emphasize fast add/commit cycle + pull/push, commit often
 
 
-## Branching
+## Branching (1 hour)
 
 - git branch (+ git checkout [-b])
 - git tag
@@ -36,14 +36,14 @@ git commands (clone, add, commit, pull, push).
 - feature branch workflow
 
 
-## Collaborative platforms
+## Collaborative platforms (1 hour)
 
 - fork and pull request
 - tickets systems
 - good practices (e.g. good commitizen)
 
 
-## Bonus
+## Bonus (probably skipped)
 
 - git blame
 - git rebase
