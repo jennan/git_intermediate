@@ -258,25 +258,31 @@ git commit -av
 
 # What is a branch?
 
-![](figs/branches_00.pdf)
+![](figs/branches_init.pdf)
 
 ---
 
 # What is a branch?
 
-![](figs/branches_01.pdf)
+![](figs/branches_split.pdf)
 
 ---
 
 # What is a branch?
 
-![](figs/branches_02.pdf)
+![](figs/branches_push.pdf)
 
 ---
 
 # What is a branch?
 
-![](figs/branches_03.pdf)
+![](figs/branches_merge.pdf)
+
+---
+
+# What is a branch?
+
+![](figs/branches_final.pdf)
 
 ---
 
