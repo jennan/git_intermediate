@@ -244,8 +244,6 @@ git commit -av
 
 - git push -u
 
-- git tag
-
 - git merge
 
 - feature branch workflow
@@ -336,13 +334,42 @@ gitk
 
 ---
 
-# Tag commits
+# Merge branches -- easy case
+
+- let's add a bit more content to **master**
+```bash
+git checkout master
+nano README.md  # discuss subjects in methods
+git commit -am "Add subjects"
+```
+
+- merge **abstract** branch
+```bash
+git status
+git merge abstract
+```
+
+. . .
+
+::: columns
+
+:::: {.column width=0.6}
+- contemplate merged repository
+```bash
+ls -la
+gitk
+```
+::::
+
+:::: {.column width=0.3}
+![](figs/no_conflict.jpg)
+::::
+
+:::
 
 ---
 
-# Merge branches
-
-TODO
+# Merge branches -- not so easy case
 
 ---
 
@@ -372,6 +399,7 @@ Convention for commit messages:
 
 # Bonus (probably skipped)
 
+- git tag
 - git blame
 - git rebase
 - git cherry-pick
