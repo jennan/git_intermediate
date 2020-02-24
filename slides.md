@@ -464,13 +464,58 @@ git mergetool  # brrr again a graphical tool
 
 # Fork and pull requests
 
-TODO
+Github (and bitbucket, gitlab etc.) platform to collaborate:
+
+1. fork the repository of interest
+
+2. make relevant changes (bug fix, new feature...)
+
+3. politely **request** the owner to **pull** your code in his repository
+
+---
+
+# Pull requests -- contributor side
+
+![](figs/pull_request_01b.png)
+
+---
+
+# Pull requests -- contributor side
+
+![](figs/pull_request_02b.png)
+
+---
+
+# Pull requests -- code owner side
+
+![](figs/pull_request_03b.png){height=90%}
+
+---
+
+# Pull requests -- practice
+
+- pair up with your neighbor
+- one is the **owner**, and one is the **contributor**
+
+`/!\` **contributor** deletes its local copy of `vegetable_language`
+
+Create a pull request
+
+- **contributor** forks `vegetable_language` repo from **owner**
+- **contributor** clones it and make some changes
+- **contributor** creates a pull request
+
+Integration of the pull request
+
+- **owner** reviews the pull request, ask for more stuff
+- **contributor** adds more commits to update the pull request
+- **owner** accepts (or not) final changes
 
 ---
 
 # Tickets systems
 
-TODO
+TODO screenshots and instructions
 
 ---
 
