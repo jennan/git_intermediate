@@ -232,6 +232,10 @@ git commit -av
 
 ---
 
+![](figs/break-15-min.jpg)
+
+---
+
 # Branching (45 min)
 
 - git checkout [-b]
@@ -240,11 +244,47 @@ git commit -av
 
 - git branch
 
-- git tag
-
 - git merge
 
+- git tag
+
 - feature branch workflow
+
+---
+
+# What is a branch?
+
+. . .
+
+![](figs/diagram-time.jpg)
+
+---
+
+# Create a branch, switch branches
+
+TODO
+
+---
+
+# Local vs. distant branches
+
+TODO
+
+---
+
+# Merge branches
+
+TODO
+
+---
+
+# Tag commits, delete branches
+
+---
+
+# Feature branch workflow
+
+TODO
 
 ---
 
