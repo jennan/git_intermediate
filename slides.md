@@ -353,15 +353,15 @@ git merge abstract
 
 ::: columns
 
-:::: {.column width=0.6}
-- contemplate merged repository
+:::: {.column width=0.5}
+- contemplate
 ```bash
 ls -la
 gitk
 ```
 ::::
 
-:::: {.column width=0.3}
+:::: {.column width=0.4}
 ![](figs/no_conflict.jpg)
 ::::
 
@@ -370,6 +370,44 @@ gitk
 ---
 
 # Merge branches -- not so easy case
+
+- switch to a **methods** branch and edit methods
+```bash
+git checkout -b methods
+nano README.md  # explain (in)coherent sentences
+git commit -am "explain paradigm"
+```
+
+- switch to **master** branch and change same text
+```bash
+git checkout master
+nano README.md  # add electrodes locations 
+git commit -am "ephys explanations"
+```
+
+. . .
+
+::: columns
+
+:::: {.column width=0.6}
+- enjoy a good conflict (or redo)
+```bash
+git merge
+git status
+```
+::::
+
+:::: {.column width=0.35}
+![](figs/conflict.jpg){width=80%}
+::::
+
+:::
+
+---
+
+# Fix conflicts
+
+TODO
 
 ---
 
