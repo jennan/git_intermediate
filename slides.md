@@ -515,7 +515,20 @@ Integration of the pull request
 
 # Tickets systems
 
-TODO screenshots and instructions
+Organize issues, feature request, milestones etc.
+
+Issues can be linked with tickets:
+
+- **web browser:** create a ticket, asking for more content
+- **terminal:**
+ 
+    - create a new commit
+    - use `closes #<issue number>` in the commit message 
+    - push the commit 
+
+- **web browser:** check issue status
+
+<!-- example from cellfiner, or scikit-learn -->
 
 ---
 
