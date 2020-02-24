@@ -433,7 +433,12 @@ git mergetool  # brrr again a graphical tool
 
 # Feature branch workflow
 
-TODO
+- **master** always contains working version
+- create a branch for each new feature
+- merge to **master** as soon as feature is ready
+- bonus: keep history relatively clean
+
+**Note:** This is the GitHub flow flavor.
 
 ---
 
@@ -455,12 +460,12 @@ Convention for commit messages:
 
 ---
 
-# Bonus (probably skipped)
+# Bonus
 
 - git tag
 - git blame
-- git rebase
 - git cherry-pick
+- git rebase
 - git subtree
 - git filter-branch
 - ...
