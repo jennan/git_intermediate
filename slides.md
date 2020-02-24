@@ -419,7 +419,7 @@ git status
 git commit -av
 ```
 
-- emergency command to cancel (then redo from pull)
+- emergency command to cancel (then redo from merge)
 ```bash
 git merge --abort
 ```
@@ -444,6 +444,8 @@ git mergetool  # brrr again a graphical tool
 
 **Note:** This is the GitHub flow flavor.
 
+<!-- show real repository history -->
+
 ---
 
 ![](figs/second-break.jpg)
@@ -452,17 +454,48 @@ git mergetool  # brrr again a graphical tool
 
 # Collaborative platforms (45 min)
 
-- fork and pull request
+- fork and pull requests
+
 - tickets systems
-- good practices (e.g. good commitizen)
+
+- good practices (be a good commitizen)
 
 ---
+
+# Fork and pull requests
+
+TODO
+
+---
+
+# Tickets systems
+
+TODO
+
+---
+
+# Good practices
 
 Convention for commit messages:
 
 - short first line (max ~80 characters) to describe changes
 - blank line
 - paragraph to give more context, details...
+
+Pull request:
+
+- make sure your work is wanted before starting it
+- create a separate feature branch
+- keep author(s) conventions (code, commit titles, provide tests if needed)
+- as for help if it's your first pull request
+
+Tickets:
+
+- provide a minimally reproducible example, see [Stack Overflow](https://stackoverflow.com/help/minimal-reproducible-example) 
+
+---
+
+![](figs/baby_yoda.jpg){width=60%}
 
 ---
 
