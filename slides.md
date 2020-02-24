@@ -252,9 +252,31 @@ git commit -av
 
 # What is a branch?
 
-. . .
-
 ![](figs/diagram-time.jpg)
+
+---
+
+# What is a branch?
+
+![](figs/branches_00.pdf)
+
+---
+
+# What is a branch?
+
+![](figs/branches_01.pdf)
+
+---
+
+# What is a branch?
+
+![](figs/branches_02.pdf)
+
+---
+
+# What is a branch?
+
+![](figs/branches_03.pdf)
 
 ---
 
