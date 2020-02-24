@@ -60,9 +60,9 @@ date: February 25, 2020
 
 - git reset
 
-- git stash
-
 - git revert
+
+- git stash
 
 - gitk (and other viewers)
 
@@ -81,46 +81,55 @@ Let's write a fictitious paper to replicate *Frisch and Graben, 2007*:
 
 # Practice `git add/commit/push`
 
-- commit as often as possible, i.e. as often as saving documents
+Commit as often as possible, i.e. as often as saving documents.
 
 - add **Introduction** section to the `README.md` file
 ```bash
 nano README.md
 git add README.md
-git commit
+git commit -m "add intro section title"
 ```
 - add **Methods** section to the `README.md` file, and push
 ```bash
 nano README.md
 git add README.md
-git commit
+git commit -m "add methods section title"
 git push
 ```
-- redo for **Results** and **Discussion** sections
 
 ---
 
 # Faster/better commits with `git commit -av`
 
-- flag `-a` (or `--all`) to automatically stage changed files
-- `/!\` you still need to add new files `/!\`
-- flag `-v` (or `--verbose`) to see differences in commit message
 
-- add some content to the Introduction and commit
+- useful optional flags for the `git commit` command
+
+    - flag `-a` (or `--all`) to automatically stage changed files
+    - `/!\` you still need to manually add new files `/!\`
+    - flag `-v` (or `--verbose`) to see differences in commit message
+
+- add **Results** section
 ```bash
 nano README.md
 git commit -av
+git status
+```
+
+- add **Discussion** section
+```bash
+nano README.md
+git commit -am "add discussion section"
+git status
 git log
 ```
 
 ---
 
 # Ignoring things using `.gitignore` file
-<!-- 5 min -->
 
 - create a junk file and a spurious folder
 ```bash
-nano pluto.txt~
+nano README.md~
 mkdir tmp
 nano tmp/more_junk_file.txt
 git status
@@ -134,21 +143,92 @@ git commit -m "Ignore junk files"
 git status
 ```
 
+**Note:** local vs. user's `.gitignore` files
+
 ---
 
 # Remove changes using `git reset`
 
----
+- make some changes to `README.md` and stage (no commit)
+```bash
+nano README.md
+git add README.md
+git status
+```
 
-# Temporary discard changes with `git stash`
+- unstage changes using `git reset`
+```bash
+git reset README.md
+git status
+git diff
+```
+
+- remove all changes (to all file) using `git reset --hard`
+```bash
+git reset --hard
+git status
+git diff
+```
+
+**Note:** remember `git checkout` to remove changes for one file
 
 ---
 
 # Undo changes with `git revert`
 
+- create a new commit to undo a previous commit
+
+- remove `README.md` and commit
+```bash
+rm README.md
+git commit -am "remove README.md"
+ls -la
+```
+
+- recover the file by undoing the last commit
+```bash
+git revert HEAD
+ls -la
+git log
+```
+
+**Note:** useful if changes already pushed
+
+---
+
+# Temporary discard changes with `git stash`
+
+- make some changes to `README.md` (no commit)
+```bash
+nano README.md  # add a bit of context in the intro
+git status
+cat README.md
+```
+
+- aaarg, boss wants to see last clean version, use `git stash`!
+```bash
+git stash
+cat README.md
+```
+
+- back to work, recover changes and commit
+```bash
+git stash pop
+cat README.md
+git commit -av
+```
+
+**Note:** `git stash list` and `git stash drop`
+
 ---
 
 # Viewers: `gitk` and friends
+
+- `gitk` is available everywhere
+
+- other graphical/cli clients: gitg, kraken, sourcetree, tig...
+
+- I personally use them to look at commits and files history.
 
 ---
 
@@ -174,12 +254,19 @@ git status
 - tickets systems
 - good practices (e.g. good commitizen)
 
+Convention for commit messages:
+
+- short first line (max ~80 characters) to describe changes
+- blank line
+- paragraph to give more context, details...
+
 ---
 
 # Bonus (probably skipped)
 
 - git blame
 - git rebase
+- git cherry-pick
 - git subtree
 - git filter-branch
 - ...
