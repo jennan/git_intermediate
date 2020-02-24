@@ -288,6 +288,10 @@ TODO
 
 ---
 
+![](figs/second-break.jpg)
+
+---
+
 # Collaborative platforms (45 min)
 
 - fork and pull request
