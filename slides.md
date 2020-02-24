@@ -405,9 +405,29 @@ git status
 
 ---
 
+TODO content of README.md at that stage
+
+---
+
 # Fix conflicts
 
-TODO
+- edit conflicts and bring back peace in the repository
+```bash
+nano README.md
+git add README.md
+git status
+git commit -av
+```
+
+- emergency command to cancel (then redo from pull)
+```bash
+git merge --abort
+```
+
+- use a merge tool, I personally like **meld**
+```bash
+git mergetool  # brrr again a graphical tool
+```
 
 ---
 
