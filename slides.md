@@ -562,7 +562,7 @@ Pull request:
 - make sure your work is wanted before starting it
 - create a separate feature branch
 - keep author(s) conventions (code, commit titles, provide tests if needed)
-- as for help if it's your first pull request
+- ask for help if it's your first pull request
 
 Tickets:
 
