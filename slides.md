@@ -240,13 +240,13 @@ git commit -av
 
 - git checkout [-b]
 
-- git push -u
-
 - git branch
 
-- git merge
+- git push -u
 
 - git tag
+
+- git merge
 
 - feature branch workflow
 
@@ -262,23 +262,87 @@ git commit -av
 
 # Create a branch, switch branches
 
-TODO
+- create a new branch called **abstract** and switch to it
+```bash
+git status
+git checkout -b abstract
+git status
+```
+
+- add some content unique to this branch
+```bash
+nano ABSTRACT.md  # create an abstract
+git add ABSTRACT.md
+git commit -m "WIP abstract"
+```
+
+- switch back and forth using `checkout`
+```bash
+git checkout master
+ls
+git checkout abstract
+ls
+```
 
 ---
 
 # Local vs. distant branches
 
-TODO
+- display local and distant branches
+```bash
+git branch -a
+```
+
+- create a distant branch by pushing
+```bash
+git checkout abstract
+git push  # try to push, read git suggestion
+git push -u origin abstract
+```
+
+- check the new distant branch (also on Github)
+```bash
+git branch -a
+gitk  # brrr graphical interface
+```
+
+---
+
+# Delete branches
+
+- create a dummy branch, say **fake_data**, and push it
+```bash
+git checkout -n fake_data
+git push -u origin fake_data
+git status
+```
+
+- delete distant branch using push (or Github)
+```bash
+git push origin --delete fake_data
+gitk
+```
+
+**Note:** if using github, update local repo using `git fetch -p`
+
+- delete local branch using `-d` (or `-D`)
+```bash
+git checkout master  # switch to another branch
+git branch -d fake_data
+gitk
+```
+
+**Note:** use `-D` to delete non-dummy/non-merged branches
+
+---
+
+# Tag commits
 
 ---
 
 # Merge branches
 
 TODO
-
----
-
-# Tag commits, delete branches
 
 ---
 
