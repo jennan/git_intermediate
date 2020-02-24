@@ -438,6 +438,10 @@ git mergetool  # brrr again a graphical tool
 - merge to **master** as soon as feature is ready
 - bonus: keep history relatively clean
 
+\ 
+
+![](figs/workflow.pdf){width=80%}
+
 **Note:** This is the GitHub flow flavor.
 
 ---
@@ -451,6 +455,8 @@ git mergetool  # brrr again a graphical tool
 - fork and pull request
 - tickets systems
 - good practices (e.g. good commitizen)
+
+---
 
 Convention for commit messages:
 
