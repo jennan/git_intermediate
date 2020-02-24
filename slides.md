@@ -129,7 +129,7 @@ git log
 
 - create a junk file and a spurious folder
 ```bash
-nano README.md~
+cp README.md README.md~
 mkdir tmp
 nano tmp/more_junk_file.txt
 git status
@@ -310,7 +310,8 @@ gitk  # brrr graphical interface
 
 - create a dummy branch, say **fake_data**, and push it
 ```bash
-git checkout -n fake_data
+git checkout master
+git checkout -b fake_data
 git push -u origin fake_data
 git status
 ```
@@ -392,7 +393,7 @@ git commit -am "ephys explanations"
 :::: {.column width=0.6}
 - enjoy a good conflict (or redo)
 ```bash
-git merge
+git merge methods
 git status
 ```
 ::::
@@ -405,7 +406,40 @@ git status
 
 ---
 
-TODO content of README.md at that stage
+# Content of `README.md` during conflict
+
+```
+# The electrophysiology of Vegetable language: A replication study
+
+## Introduction
+
+We replicated the famous results from Frisch and Beim Graben
+
+## Methods
+
+Subjects:
+
+- a human being, who wants credits
+- a naive pumpkin
+
+<<<<<<< HEAD
+Eletrodes are located at Cz and Pz.
+=======
+Subjects are exposed to coherent and incoherent German sentences.
+>>>>>>> methods
+
+## Results
+
+TODO show that we get the same results for the pumpkin
+
+## Discussion
+
+TODO discuss if we should have invested tim doing this, really
+
+# References
+
+[1]: Frisch, Stefan & Beim Graben, Peter. (2007). The electrophysiology of vegetable language: A case study. Journal of Irreproducible Results. 50. 25 - 27. https://www.researchgate.net/publication/234073303_The_electrophysiology_of_vegetable_language_A_case_study
+```
 
 ---
 
