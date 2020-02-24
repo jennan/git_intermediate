@@ -408,37 +408,20 @@ git status
 
 # Content of `README.md` during conflict
 
-```
-# The electrophysiology of Vegetable language: A replication study
+```markdown
+# The electrophysiology of Vegetable language...
 
-## Introduction
-
-We replicated the famous results from Frisch and Beim Graben
-
-## Methods
-
-Subjects:
-
-- a human being, who wants credits
-- a naive pumpkin
+[...]
 
 <<<<<<< HEAD
 Eletrodes are located at Cz and Pz.
 =======
-Subjects are exposed to coherent and incoherent German sentences.
+Subjects are exposed to coherent and incoherent...
 >>>>>>> methods
 
 ## Results
 
-TODO show that we get the same results for the pumpkin
-
-## Discussion
-
-TODO discuss if we should have invested tim doing this, really
-
-# References
-
-[1]: Frisch, Stefan & Beim Graben, Peter. (2007). The electrophysiology of vegetable language: A case study. Journal of Irreproducible Results. 50. 25 - 27. https://www.researchgate.net/publication/234073303_The_electrophysiology_of_vegetable_language_A_case_study
+[...]
 ```
 
 ---
